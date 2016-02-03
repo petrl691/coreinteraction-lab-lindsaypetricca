@@ -1,0 +1,55 @@
+.containertwo {
+    width:100%;
+    height:800px;
+}
+#one {
+    width:100%;
+    height:800px;
+    float:left;
+    background-color:#f09831;
+    background-image:
+    linear-gradient(
+        #426cb0, #f09831);
+}
+
+.haikuone {
+    position:absolute;
+    top: 10%;
+    left:1%;
+    font-size:200px;
+}
+
+.haikutwo {
+    position:absolute;
+    top: 20%;
+    left:1%;
+    font-size:200px;
+}
+
+.haikuthree{
+    position:absolute;
+    top: 30%;
+    left:1%;
+    font-size:200px;
+}
+
+.haikufour{
+    position:absolute;
+    top: 40%;
+    left:1%;
+    font-size:200px;
+}
+
+.haikufive{
+    position:absolute;
+    top: 50%;
+    left:1%;
+    font-size:200px;
+}
+
+.haikusix{
+    position:absolute;
+    top: 60%;
+    left:1%;
+    font-size:200px;
+}
