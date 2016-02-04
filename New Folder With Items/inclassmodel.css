@@ -1,0 +1,84 @@
+head {
+	text-align:center;
+	font-family: helvetica
+}
+
+body {
+	background-color:lightBlue;
+	font-family: helvetica
+}
+
+.header  {
+	text-align:center;
+	margin:40px;
+	font-family: helvetica;
+	font-size: 22px;
+}
+
+.place.desert {
+	text-align:center;
+	padding: 10px;
+	background-color: orange;
+	margin: 10px;
+	margin-left:40px;
+	margin-right:40px;
+	border:10px solid yellow;
+	font-family: helvetica;
+	padding-right:5px;
+	
+}
+
+.place-footer.desert {
+	text-align:center;
+	padding: 10px;
+	background-color:orange;
+	margin: 10px;
+	font-family: helvetica
+
+}
+
+.place.jungle {
+	text-align:center;
+	color:yellow;
+	padding: 10px;
+	background-color:darkGreen;
+	border: 5px, green;
+	margin: 10px;
+	margin-left:40px;
+	margin-right:40px;
+	font-family: helvetica;
+	border:10px solid green;
+}
+
+.place-footer.jungle {
+	text-align:center;
+	color:yellow;
+	padding: 10px; 
+	background-color:darkGreen;
+	margin: 10px;
+	font-family: helvetica;
+
+}
+
+.place.city {
+	text-align:center;
+	color:white;
+	padding: 10px; 
+	background-color:gray;
+	border: black;
+	margin: 10px;
+	font-family: helvetica;
+	margin-left:40px;
+	margin-right:40px;
+	border:10px solid black;
+
+}
+
+.place-footer.city {
+	text-align:center;
+	color: white;
+	padding: 10px; 
+	background-color: gray;
+	margin: 10px;
+	font-family: helvetica;
+}
