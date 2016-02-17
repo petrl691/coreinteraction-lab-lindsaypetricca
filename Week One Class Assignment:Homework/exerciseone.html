@@ -49,6 +49,9 @@
     .haikusix:hover {
       color: black;
     }
+    .backgroundchange {
+      background-color: purple;
+    }
   
 	</style>
 </head>
@@ -70,7 +73,7 @@
 		</div>
 		
 	<div class="haikuthree">
-		<a href="http://www.wired.com/2006/02/dalai/">ON BUDDHA</a>
+		ON BUDDHA
 		</div>
 
 	<div class="haikufour">
@@ -85,10 +88,15 @@
 		MOON
 		</div>
 
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
-    
+  <script>
 
-<script type="text/javascript" src="exerciseone.js"></script>
+  $('.haikuthree').click(function () {
+   $(this).toggleClass('backgroundchange');
+  });
+
+  </script>
 
 </body>
 

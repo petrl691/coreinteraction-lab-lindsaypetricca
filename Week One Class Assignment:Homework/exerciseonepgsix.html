@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="exerciseonepgsix.css">
+
+	<style>
+
+	.haikufirstline:hover {
+		color: white;
+	}
+
+	.haikusecondline:hover {
+		margin:5px;
+		color: white;
+	}
+
+	.haikuthirdline:hover {
+		margin:5px;
+		color: white;
+	}
+
+	.backgroundchange {
+		background-color: red
+	}
+
+	</style>
+
+</head>
+<body>
+
+<div class="haikufirstline">again and again</div>
+
+<div class="haikusecondline">i ask</div>
+
+<div class="haikuthirdline">how high the snow is...</div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+	<script>
+
+	$('.haikusecondline').click(function () {
+   $(this).toggleClass('backgroundchange');
+});
+
+	</script>
+
+
+</html>

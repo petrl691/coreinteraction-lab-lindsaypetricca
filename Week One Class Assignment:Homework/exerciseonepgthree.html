@@ -7,32 +7,32 @@
 	<style>
 	   .haikuone {
       font-family: georgia;
-      color: #ebc1f0;
+      color: pink;
       text-align:center;
     }
     .haikutwo {
       font-family: georgia;
-      color: #ebc1f0;
+      color:pink;
       text-align:center;
     }
     .haikuthree {
       font-family: georgia;
-      color: #ebc1f0;
+      color: pink;
       text-align:center;
     }
     .haikufour {
       font-family: georgia;
-      color: #ebc1f0;
+      color: pink;
       text-align:center;
     }
      .haikufive {
       font-family: georgia;
-      color: #ebc1f0;
+      color:pink;
       text-align:center;
     }
     .haikusix {
       font-family: georgia;
-      color: #ebc1f0;
+      color:pink;
       text-align:center;
     }
     .haikuone:hover {
@@ -50,6 +50,14 @@
     .haikusix:active {
       color: white;
     }
+
+    .colorchange {
+      color: purple;
+      font-family:helvetica;
+
+    }
+
+
 	</style>
 </head>
 
@@ -73,9 +81,17 @@
 
 	<div class="haikufive">
 		has come into bloom 
-    <a href="https://www.youtube.com/watch?v=LjCzPp-MK48">has come into bloom</a>
 		</div>	
 
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+  <script>
+
+  $('.haikufive').click(function () {
+   $(this).toggleClass('colorchange');
+  });
+
+  </script>
 	
-<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
 </body>

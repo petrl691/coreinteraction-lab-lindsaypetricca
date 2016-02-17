@@ -52,6 +52,10 @@
     .haikusix:active {
       color: #426cb0;
     }
+
+    .colorchange{
+      background-color: orange;
+    }
     
 	</style>
 </head>
@@ -72,7 +76,7 @@
 		</div>
 		
 	<div class="haikuthree">
-		<a href="http://www.wired.com/2006/02/dalai/">ON BUDDHA</a> </div>
+		ON BUDDHA </div>
 		
 	<div class="haikufour">
 		AND FACE
@@ -85,6 +89,15 @@
 	<div class="haikusix">
 		MOON
 		</div>
-<script type="text/javascript" src="exerciseonepgtwo.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+  <script>
+
+  $('.haikuthree').click(function () {
+   $(this).toggleClass('colorchange');
+  });
+
+  </script>
 </body>
  

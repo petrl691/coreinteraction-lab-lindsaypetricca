@@ -7,32 +7,32 @@
 	<style>
 	   .haikuone {
       font-family: arial;
-      color: darkGreen;
+      color: green;
       text-align:center;
     }
     .haikutwo {
       font-family: arial;
-      color: darkGreen;
+      color: green;
       text-align:left;
     }
     .haikuthree {
       font-family: arial;
-      color: darkGreen;
+      color: green;
       text-align:right;
     }
     .haikufour {
       font-family: arial;
-      color: darkGreen;
+      color: green;
       text-align:center;
     }
      .haikufive {
       font-family: arial;
-      color: darkGreen;
+      color: green;
       text-align:right;
     }
     .haikusix {
       font-family: arial;
-      color: darkGreen;
+      color: green;
       text-align:left;
     }
     .haikuone:hover {
@@ -50,6 +50,15 @@
     .haikusix:active {
       color: white;
     }
+
+    body {
+      background: navy;
+    }
+
+    .backgroundchange {
+      background-color: red;
+    }
+
 	</style>
 </head>
 
@@ -73,9 +82,16 @@
 
 	<div class="haikufive">
 		has come into bloom 
-    <a href="https://www.youtube.com/watch?v=LjCzPp-MK48">has come into bloom</a>
 		</div>	
 
 	
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+  <script>
+
+  $('.haikufive').click(function () {
+   $(this).toggleClass('backgroundchange');
+});
+
+  </script>
 </body>

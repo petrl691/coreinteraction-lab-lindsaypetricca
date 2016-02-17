@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="exerciseonepgfive.css">
+
+	<style>
+
+	.haiku:hover {
+		color: blue;
+	}
+
+	.haiku:hover {
+		margin:5px;
+		color: blue;
+	}
+
+	.backgroundchange {
+		color:Lightblue;
+	}
+
+	</style>
+
+</head>
+<body>
+
+<div class="haiku">again and again
+I ask how high
+the snow is...</div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+	<script>
+
+	$('.haiku').click(function () {
+   $(this).toggleClass('backgroundchange');
+});
+
+	</script>
+
+
+</html>
