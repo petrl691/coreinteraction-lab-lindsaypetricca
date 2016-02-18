@@ -1,0 +1,14 @@
+.square {
+	background-color: blue;
+	width:300px;
+	height:300px;
+}
+
+.smallsq {
+	display:inline-block;
+	height:60px;
+	width:60px;
+	background-color: yellow
+}
+
+

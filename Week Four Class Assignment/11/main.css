@@ -1,0 +1,12 @@
+.square {
+	background-color: blue;
+	width:300px;
+	height:100px;
+	margin-bottom: 10px;
+	margin-left: 70px;
+	}
+
+#special{
+	position: relative;
+	left: 20px;
+}
