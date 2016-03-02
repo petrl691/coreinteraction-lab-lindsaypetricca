@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.title {
+  font-family: Georgia;
+  color: Pink;
+  position:absolute;
+  margin-left: 40%;
+  font-size: 30px;
+  margin-top: 5px
+}
+
+.flexcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  position: absolute;
+}
+
+.flexcontainer img {
+  width: 450px;
+  height: 250px;
+  background: #4b7fe8;
+  margin: 8px;
+}

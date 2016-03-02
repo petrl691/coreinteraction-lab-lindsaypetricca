@@ -1,0 +1,66 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="weekfiveinclass.css">
+
+	<meta name="description" content="Hello Flexbox">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+<style type="text/css">
+    a.box img {
+        border: none;
+        box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+        -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+    } 
+    a.box:hover img {
+        position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+    }
+</style>
+
+</head>
+<body>
+
+<div class="title">Cat Pics are all the Rage</div>
+
+<div class="flexcontainer">
+	<img class="box" src="cat2.jpg" title= "Sleepy Cat">
+    <img class="box"src="cat3.jpg"title= "Curious Cat">
+    <img class="box"src="cat4.jpg"title= "Cute Cat">
+    <img class="box"src="cat5.jpg"title= "Guilty Cat">
+    <img class="box"src="cat6.jpg"title= "Silly Cat">
+    <img class="box"src="cat7.jpg"title= "Rainbow Cats">
+    <img class="box"src="cat8.jpg"title= "Grumpy Cat">
+    <img class="box"src="cat9.jpg"title= "Model Cat">
+    <img class="box"src="cat10.jpg"title= "Fraternal Twin Cats">
+	
+</div>
+
+
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'over';
+        $(addToAll ? 'img' : 'img.box').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="box"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.box').attr('rel', 'fancyboxgallery');
+        $('a.box').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
+</body>
+</html>
